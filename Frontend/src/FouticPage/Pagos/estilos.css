@@ -1,0 +1,57 @@
+.estoEsTodo{
+  display: flex;
+  background: url(../img/ProductosPrimeraPagina/fondo.jpeg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contenedoDePagado{
+  width: 40%;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.botonesDeCompras{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.parrafosSinMargenes{
+  margin: 0;
+}
+
+.informacion{
+  margin-top: 10px;
+  cursor: pointer;
+}
+.formularioParaFecha{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+@media screen and (max-width: 420px) {
+  .contenedoDePagado{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+  }
+  .contenedoDePagado h2{
+    text-align: center;
+  }
+}

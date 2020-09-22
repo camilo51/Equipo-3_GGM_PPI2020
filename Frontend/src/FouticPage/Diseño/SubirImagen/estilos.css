@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.todo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../img/ProductosPrimeraPagina/fondo.jpeg");
+  background-size: cover;
+}
+.formato{
+  z-index: 1;
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 7px;
+  padding: 10px 5px;
+  border: 1px solid #000
+}
+.texto h4{
+  text-align: center;
+}
+.formulario{
+  padding: 50px 20px;
+  border: none;
+}
+.formulario input{
+  text-align: center;
+}
+.botones{
+  padding: 10px;
+}
+.size{
+  max-width: 200px;
+}
+.cargaImagen{
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.tallas{
+  text-align: center;
+}
+
+.checks{
+  display: flex;
+  flex-direction: row;
+}
+.checks div{
+  margin: 2px 5px;
+}
+.checks div label{
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 450px) {
+  .formato{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+}

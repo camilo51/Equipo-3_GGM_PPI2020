@@ -1,0 +1,27 @@
+.principalPerfil{
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  flex-wrap: wrap;
+}
+.principalPerfil h2{
+  font-size:35px;
+  font-weight: bold;
+}
+.imagenDePerfil{
+  width: 100%;
+}
+.todoPerfil{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pedidos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.pedidos h4{
+  margin-bottom: 0;
+}

@@ -1,0 +1,60 @@
+.principal{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../img/ProductosPrimeraPagina/fondo.jpeg");
+  background-size: cover;
+}
+.contenedor{
+  z-index: 1;
+  padding: 10px 5px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  border:1px solid #000;
+  border-radius: 7px;
+}
+.editor{
+  display: flex;
+  margin-bottom: 20px;
+}
+.colores{
+  width: 49%;
+  display: flex;
+  justify-content: center;
+}
+.imagenEscogida{
+  width: 49%;
+}
+.imgPrueba{
+  width: 95%;
+  height: 100%;
+}
+
+.checks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.checks div{
+  margin: 2px 5px;
+}
+.checks div label{
+  margin-right: 2px;
+}
+@media screen and (max-width: 450px) {
+  .contenedor{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .colores{
+    order: 2;
+  }
+
+}

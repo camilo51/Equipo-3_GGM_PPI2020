@@ -1,0 +1,107 @@
+.contenedorPadre{
+  background: url("../../img/ProductosPrimeraPagina/fondo.jpeg");
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorDelFormulario{
+  margin: 30px;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  padding: 40px 20px;
+  border:  2px solid #000;
+  border-radius: 7px;
+}
+.contenedorDeLaImagen{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  }
+.logoImg{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border:  1px solid #000;
+}
+.tituloIS{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.infoLabel{
+  margin-bottom: 0;
+}
+.infoInput{
+  width: 400px;
+  padding: 8px;
+  display: block;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.infoInput:focus{
+  border: 1px solid #5799ff;
+}
+.contMayor{
+  display: flex;
+  margin-bottom: 10px;
+}
+.cont{
+  text-align: center;
+  width: 49.5%;
+}
+.labelMalo{
+  display: block;
+  margin-bottom: 0;
+}
+.tamaño{
+  width: 90%;
+  height: 25px;
+}
+.especialL{
+  margin-right: 10px;
+}
+.elboton{
+  display: flex;
+  justify-content: space-around;
+}
+.buttonEnviar{
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 3px;
+  width: 300px;
+  background:#aaffcd;
+  opacity: .7
+}
+.buttonEnviar:hover{
+  background: #2dff83;
+  opacity: 1;
+}
+.letraO{
+  text-align: center;
+  margin: 10px auto;
+}
+.organizar{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 450px) {
+  /* .contenedorPadre{
+    display: none;
+  } */
+  .contenedorDelFormulario{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  .infoInput{
+    width: 100%;
+  }
+}

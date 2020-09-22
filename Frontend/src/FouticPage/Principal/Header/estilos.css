@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.hola{
+  display: block;
+}
+.header{
+  background: #00b8a9;
+  padding: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedorLista {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.listado {
+  background-color: #00b8a9;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+  color: #000;
+}
+.dropdown-menu.show{
+  background-color: #fff;
+  padding: 3px 0;
+  height: auto;
+  width: 100%;
+}
+.enlaces{
+  color: #000;
+  text-decoration: none;
+}
+.enlaces:hover{
+  text-decoration: none;
+  color: #000;
+}
+.listado:hover{
+  background: #90fff8;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+.todoMenu{
+  display: flex;
+  align-items: center;
+}
+.logoTitulo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoTitulo:hover{
+  cursor: pointer;
+}
+.titulo{
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.logoImg{
+  width: 5s0px;
+  height: 5s0px;
+  border-radius: 3px;
+  border:  1px solid #000;
+  margin-bottom: 0;
+}
+.infoMenu{
+  display: none;
+}
+.imagenDeUsuario{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: auto 10px;
+}
+.imagenDeUsuario:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+
+    .header{
+      height: auto;
+      display: block;
+    }
+    .todoMenu{
+      order: 2;
+      z-index: 5;
+      /* display: none; */
+    }
+    .contenedorInicio{
+      display: flex;
+      justify-content:space-around;
+    }
+    .logoTitulo{
+      display: none;
+    }
+    .encerrandoListado{
+      height: 40px;
+    }
+    .header div .contenedorInicio .contenedorLista{
+      flex-direction: column;
+
+    }
+    .header div .contenedorInicio .contenedorLista .listado{
+      padding: 3px;
+      text-align: center;
+      border:none;
+      border-bottom: 1px solid #000;
+      width: 200px;
+    }
+    .infoMenu{
+      width: 100%;
+      display: block;
+    }
+    .infoMenu img{
+      height: 50px;
+    }
+    .children{
+      width: 100%;
+      position: relative;
+    }
+}
+/* @media screen and (max-width: 605px) {
+  .header div .contenedorInicio .contenedorLista{
+    width: 450px;
+  }
+} */
