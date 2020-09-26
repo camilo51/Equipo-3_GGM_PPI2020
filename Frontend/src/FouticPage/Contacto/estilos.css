@@ -1,0 +1,45 @@
+.fondoDeContacto{
+  background: url(../img/ProductosPrimeraPagina/fondo.jpeg);
+  background-size:cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formularionDeInquietud{
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  width: 40%;
+}
+.formularionDeInquietud h2{
+  width: 100%;
+}
+.formularionDeInquietud label{
+  color: #c0c0c0;
+}
+.inputContacto{
+  width: 100%;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.textarea{
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+}
+.inputContacto:focus, .textarea:focus{
+  border: 1px solid #5799ff;
+}

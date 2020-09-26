@@ -73,7 +73,6 @@ class Header extends Component {
                     }
                   })}
                   */}
-
                   <Link to="/" ><Button variant="success" className="listado">Inicio</Button></Link>
                   <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic" className="listado">
@@ -99,7 +98,7 @@ class Header extends Component {
                   </Dropdown>
                   <Link to="/iniciar seccion"><Button variant="success" className="listado">Iniciar Seccion </Button></Link>
                   <Link to="/registrarse"><Button variant="success" className="listado">Registrarse</Button></Link>
-
+                  <Link to="/perfil" className="enlaces"><Button variant="success" className="listado activacion">Perfil</Button></Link>
                 </ul>
               </nav>
               <Link to="/perfil"><img src={perfil} className="imagenDeUsuario" /></Link>

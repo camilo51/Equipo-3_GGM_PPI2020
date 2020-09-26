@@ -7,11 +7,13 @@ import Registrarse from './FouticPage/Seccion/Registro/Registrarse';
 import Subir_imagen from './FouticPage/Diseño/SubirImagen/SubirImagen';
 import Personalizar from './FouticPage/Diseño/Personalizar/Personalizar';
 import Hombre from './FouticPage/Categorias/Hombres/ComplementosHombres';
-import Mujeres from './FouticPage/Categorias/Mujeres/ComplementosMujeres'
-import Niñas from './FouticPage/Categorias/Niñas/ComplementosNiñas'
-import Niños from './FouticPage/Categorias/Niños/ComplementosNiños'
-import Perfil from './FouticPage/Perfil/Usuario'
-import Pagos from './FouticPage/Pagos/Pagos'
+import Mujeres from './FouticPage/Categorias/Mujeres/ComplementosMujeres';
+import Niñas from './FouticPage/Categorias/Niñas/ComplementosNiñas';
+import Niños from './FouticPage/Categorias/Niños/ComplementosNiños';
+import Perfil from './FouticPage/Perfil/Usuario';
+import Pagos from './FouticPage/Pagos/Pagos';
+import Footer from './FouticPage/Footer/Footer';
+import Contacto from './FouticPage/Contacto/Contacto';
 
 
 export default function App() {
@@ -31,7 +33,9 @@ export default function App() {
         <Route exact path="/catalogos/niños" component={Niños} />
         <Route exact path="/perfil" component={Perfil} />
         <Route exact path="/prendas" component={Pagos} />
+        <Route exact path="/contactenos" component={Contacto} />
       </Switch>
+      <Footer />
     </BrowserRouter>
 
     {/*---------------------Parte Principal---------------------

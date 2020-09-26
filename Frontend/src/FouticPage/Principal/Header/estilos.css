@@ -79,6 +79,9 @@
 .infoMenu{
   display: none;
 }
+.activacion{
+  display: none;
+}
 .imagenDeUsuario{
   width: 40px;
   height: 40px;
@@ -102,7 +105,8 @@
     }
     .contenedorInicio{
       display: flex;
-      justify-content:space-around;
+      width: 100%;
+      justify-content:center;
     }
     .logoTitulo{
       display: none;
@@ -127,6 +131,12 @@
     }
     .infoMenu img{
       height: 50px;
+    }
+    .activacion{
+      display: block;
+    }
+    .imagenDeUsuario{
+      display: none;
     }
     .children{
       width: 100%;
