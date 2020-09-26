@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './estilos.css';
+import { Link } from 'react-router-dom';
 import logo from '../../img/logo.jpeg';
 import Google from '../Recursos/Google';
 import Facebook from '../Recursos/Facebook';
@@ -8,7 +9,7 @@ class Inicio extends Component {
   render() {
     return(
       <div className="padre">
-        <form className="contenidoFormulario">
+        <form className="contenidoFormulario" action="/">
         <div>
         <img src={logo} className="logoImg"/>
         </div>

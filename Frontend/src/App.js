@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from './FouticPage/Principal/Header/Header';
 import Inicio from './FouticPage/Principal/Inicio';
 import IniciarSeccion from './FouticPage/Seccion/Iniciar/IniciarSeccion';
 import Registrarse from './FouticPage/Seccion/Registro/Registrarse';
 import Subir_imagen from './FouticPage/Diseño/SubirImagen/SubirImagen';
 import Personalizar from './FouticPage/Diseño/Personalizar/Personalizar';
-import Hombre from './FouticPage/Categorias/Hombres/Slider/Shombres';
+import Hombre from './FouticPage/Categorias/Hombres/ComplementosHombres';
 import Mujeres from './FouticPage/Categorias/Mujeres/ComplementosMujeres'
 import Niñas from './FouticPage/Categorias/Niñas/ComplementosNiñas'
 import Niños from './FouticPage/Categorias/Niños/ComplementosNiños'
@@ -17,24 +17,22 @@ import Pagos from './FouticPage/Pagos/Pagos'
 export default function App() {
   return (
     <div className="App">
-
+    <BrowserRouter>
     <Header />
-
-    <Router>
       <Switch>
-      <Route path="/" exact component={Inicio} />
-      <Route path="/inicio" exact component={IniciarSeccion} />
-      <Route path="/registro" exact component={Registrarse} />
-      <Route path="/subir_imagen" exact component={Subir_imagen} />
-      <Route path="/personalizar" exact component={Personalizar} />
-      <Route path="/hombres" exact component={Hombre} />
-      <Route path="/mujeres" exact component={Mujeres} />
-      <Route path="/niñas" exact component={Niñas} />
-      <Route path="/niños" exact component={Niños} />
-      <Route path="/perfil" exact component={Perfil} />
-      <Route path="/prendas" exact component={Pagos} />
+        <Route exact path="/" component={Inicio} />
+        <Route exact path="/iniciar seccion" component={IniciarSeccion} />
+        <Route exact path="/registrarse" component={Registrarse} />
+        <Route exact path="/diseño/subir imagen" component={Subir_imagen} />
+        <Route exact path="/diseño/personalizar" component={Personalizar} />
+        <Route exact path="/catalogos/hombres" component={Hombre} />
+        <Route exact path="/catalogos/mujeres" component={Mujeres} />
+        <Route exact path="/catalogos/niñas" component={Niñas} />
+        <Route exact path="/catalogos/niños" component={Niños} />
+        <Route exact path="/perfil" component={Perfil} />
+        <Route exact path="/prendas" component={Pagos} />
       </Switch>
-    </Router>
+    </BrowserRouter>
 
     {/*---------------------Parte Principal---------------------
       <Niñas />

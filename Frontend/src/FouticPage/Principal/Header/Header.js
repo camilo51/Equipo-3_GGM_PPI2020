@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './estilos.css';
-// import Rutas from '../../Rutas'
 import Menu from './Menu/MenuMap';
 import logo from '../../img/logo.jpeg';
 import menu from '../../img/menu.png';
-import { Dropdown } from 'react-bootstrap';
+import { Dropdown, Button } from 'react-bootstrap';
 import perfil from '../../img/Usuario/Perfil.png';
 
 class Header extends Component {
 
   render() {
     return (
-      <Router>
       <div className="hola">
         <div className="header" id="menuResponsive">
         <div className="infoMenu" >
@@ -27,7 +25,7 @@ class Header extends Component {
           <div className="todoMenu" >
               <nav className="contenedorInicio">
                 <ul className="contenedorLista">
-                  {Menu.Encabezado.map((item) => {
+{/*                  {Menu.Encabezado.map((item) => {
                     if (item.type === 0) {
                       return (
                         <div className="encerrandoListado">
@@ -74,16 +72,41 @@ class Header extends Component {
                       );
                     }
                   })}
+                  */}
+
+                  <Link to="/" ><Button variant="success" className="listado">Inicio</Button></Link>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className="listado">
+                      Catalogos
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Link to="/catalogos/hombres" className="enlaces"><Dropdown.Item href="#/action-1">Hombres</Dropdown.Item></Link>
+                      <Link to="/catalogos/mujeres" className="enlaces"><Dropdown.Item href="#/action-2">Mujeres</Dropdown.Item></Link>
+                      <Link to="/catalogos/niños" className="enlaces"><Dropdown.Item href="#/action-3">Niños</Dropdown.Item></Link>
+                      <Link to="/catalogos/niñas" className="enlaces"><Dropdown.Item href="#/action-4">Niñas</Dropdown.Item></Link>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className="listado">
+                      Diseño
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Link to="/diseño/subir imagen" className="enlaces"><Dropdown.Item href="#/action-1">Subir Imagen</Dropdown.Item></Link>
+                      <Link to="/diseño/personalizar" className="enlaces"><Dropdown.Item href="#/action-2">Personalizar</Dropdown.Item></Link>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Link to="/iniciar seccion"><Button variant="success" className="listado">Iniciar Seccion </Button></Link>
+                  <Link to="/registrarse"><Button variant="success" className="listado">Registrarse</Button></Link>
+
                 </ul>
               </nav>
-              <Link to="/perfil">
-              <img src={perfil} className="imagenDeUsuario" />
-              </Link>
+              <Link to="/perfil"><img src={perfil} className="imagenDeUsuario" /></Link>
           </div>
         </div>
         {/*<Rutas />*/}
       </div>
-      </Router>
     );
   }
 }

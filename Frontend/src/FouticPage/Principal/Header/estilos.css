@@ -40,13 +40,14 @@
 .enlaces{
   color: #000;
   text-decoration: none;
+  list-style: none;
 }
 .enlaces:hover{
   text-decoration: none;
+  list-style: none;
   color: #000;
 }
 .listado:hover{
-  background: #90fff8;
   cursor: pointer;
   border: 1px solid #000;
 }

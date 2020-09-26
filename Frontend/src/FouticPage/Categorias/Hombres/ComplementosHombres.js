@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import Productos from './Productos/ProductosHombres'
-import Slider from './Slider/Shombres'
+import Productos from './Productos/ProductosHombres';
+import Slider from './Slider/Shombres';
 
 class Hombres extends PureComponent {
 
