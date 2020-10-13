@@ -40,3 +40,20 @@
 .derechos p{
   margin-bottom: 0;
 }
+@media screen and (max-width:500px) {
+  .pieDePagina{
+    display: block;
+    flex-direction: column;
+  }
+  .este{
+    border: 0;
+  }
+  .parteContenido{
+    padding: 5px;
+    margin: 0;
+    width: 90%;
+  }
+  .derechos{
+    margin-top: 5px;
+  }
+}

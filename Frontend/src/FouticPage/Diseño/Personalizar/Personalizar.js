@@ -69,5 +69,4 @@ class Personalizar extends Component {
     );
   }
 }
-
 export default Personalizar;

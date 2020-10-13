@@ -43,3 +43,14 @@
 .inputContacto:focus, .textarea:focus{
   border: 1px solid #5799ff;
 }
+ @media screen and (max-width: 500px) {
+   .fondoDeContacto{
+     background: none;
+   }
+   .formularionDeInquietud{
+     border: 0;
+     border-radius: 0;
+     width: 100%;
+     height: auto;
+   }
+ }

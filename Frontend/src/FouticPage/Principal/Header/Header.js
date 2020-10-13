@@ -8,12 +8,11 @@ import { Dropdown, Button } from 'react-bootstrap';
 import perfil from '../../img/Usuario/Perfil.png';
 
 class Header extends Component {
-
   render() {
     return (
       <div className="hola">
         <div className="header" id="menuResponsive">
-        <div className="infoMenu" >
+        <div className="infoMenu">
         <img src={menu} />
         </div>
           <div>
@@ -25,54 +24,6 @@ class Header extends Component {
           <div className="todoMenu" >
               <nav className="contenedorInicio">
                 <ul className="contenedorLista">
-{/*                  {Menu.Encabezado.map((item) => {
-                    if (item.type === 0) {
-                      return (
-                        <div className="encerrandoListado">
-                          <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic" className="listado enlaces">
-                              {item.buttom}
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu className="children">
-                              {Menu.Despliegue.map((item2) => {
-                                return (
-                                  <Dropdown.Item href={item2.href}><Link className="enlaces" to={item2.page}>{item2.name}</Link></Dropdown.Item>
-                                );
-                              })}
-                            </Dropdown.Menu>
-                          </Dropdown>
-                        </div>
-                      )
-                    } else if (item.type === 2) {
-                      return (
-                        <div className="encerrandoListado">
-                          <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic" className="listado enlaces">
-                              {item.buttom}
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu className="children">
-                              {Menu.Despliegue2.map((item3) => {
-                                return (
-
-                                  <Dropdown.Item href={item3.href}><Link className="enlaces" to={item3.page}>{item3.name}</Link></Dropdown.Item>
-
-                                );
-                              })}
-                            </Dropdown.Menu>
-                          </Dropdown>
-                        </div>
-                      );
-                    } else if (item.type === 1) {
-                      return (
-
-                        <div className="encerrandoListado">
-                          <li key={item.key} className="listado"><Link className={item.class} className="enlaces" to={item.page}>{item.buttom}</Link></li>
-                        </div>
-                      );
-                    }
-                  })}
-                  */}
                   <Link to="/" ><Button variant="success" className="listado">Inicio</Button></Link>
                   <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic" className="listado">

@@ -21,7 +21,7 @@ class Footer extends Component {
           </div>
         </div>
         <div className="parteContenido">
-          <h3>Contactetos</h3>
+          <h3>Contactenos</h3>
           <p>Puede contactarnos a: foutic@foutic.com <br />O puede contactarnos tambien a nuestro numero: +57 321 753 1415</p>
           <div className="formularioContacto">
             <p>Si tene alguna inquietud, puede llenar el siguiente formulario y contactarnos.</p>

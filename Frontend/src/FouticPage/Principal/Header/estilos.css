@@ -101,7 +101,6 @@
     .todoMenu{
       order: 2;
       z-index: 5;
-      /* display: none; */
     }
     .contenedorInicio{
       display: flex;
@@ -116,14 +115,15 @@
     }
     .header div .contenedorInicio .contenedorLista{
       flex-direction: column;
-
+      width: 100%;
+      padding-right: 5px;
     }
     .header div .contenedorInicio .contenedorLista .listado{
       padding: 3px;
-      text-align: center;
       border:none;
       border-bottom: 1px solid #000;
-      width: 200px;
+      width: 100%;
+      display: flex;
     }
     .infoMenu{
       width: 100%;
