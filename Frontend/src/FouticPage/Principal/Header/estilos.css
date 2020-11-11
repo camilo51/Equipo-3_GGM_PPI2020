@@ -4,11 +4,12 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-.hola{
-  display: block;
+.mr-auto{
+  position: absolute;
+  right: 0;
 }
 .header{
-  background: #00b8a9;
+  background: #fdbd00;
   padding: 5px;
   height: auto;
   display: flex;
@@ -22,7 +23,7 @@
   list-style: none;
 }
 .listado {
-  background-color: #00b8a9;
+  background-color: #fcc12b;
   display: inline-block;
   border: 1px solid #000;
   border-radius: 3px;
@@ -93,10 +94,11 @@
 }
 
 @media screen and (max-width:800px) {
-
-    .header{
-      height: auto;
-      display: block;
+    .logoImg{
+      display: none;
+    }
+    .mr-auto{
+      position: static;
     }
     .todoMenu{
       order: 2;

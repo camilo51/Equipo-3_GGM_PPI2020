@@ -24,7 +24,7 @@ class Inicio extends Component {
           <Google />
           <Facebook />
           </div>
-          <p>Si no tienes una cuenta <a href="Registrarse"> Click aquí para Registrarse</a></p>
+          <p>Si no tienes una cuenta <Link to="/registrarse"> Click aquí para Registrarse</Link></p>
         </form>
       </div>
     );

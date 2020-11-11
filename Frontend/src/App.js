@@ -23,9 +23,9 @@ export default function App() {
     <Header />
       <Switch>
         <Route exact path="/" component={Inicio} />
-        <Route exact path="/iniciar seccion" component={IniciarSeccion} />
+        <Route exact path="/iniciarSesion" component={IniciarSeccion} />
         <Route exact path="/registrarse" component={Registrarse} />
-        <Route exact path="/diseño/subir imagen" component={Subir_imagen} />
+        <Route exact path="/diseño/subirImagen" component={Subir_imagen} />
         <Route exact path="/diseño/personalizar" component={Personalizar} />
         <Route exact path="/catalogos/hombres" component={Hombre} />
         <Route exact path="/catalogos/mujeres" component={Mujeres} />
@@ -37,15 +37,6 @@ export default function App() {
       </Switch>
       <Footer />
     </BrowserRouter>
-
-    {/*---------------------Parte Principal---------------------
-      <Niñas />
-      <Primera_pagina />
-      <Subir_imagen />
-      <Personalizar />
-      <Mujeres />
-      <Hombre />
-      */}
     </div>
   );
 }

@@ -42,6 +42,7 @@ const Contacto = () => {
                 <MyVerticallyCenteredModal
                   show={modalShow}
                   onHide={() => setModalShow(false)}
+
                 />
               </form>
             </div>
