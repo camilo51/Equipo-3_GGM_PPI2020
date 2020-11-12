@@ -4,9 +4,18 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+.bg-dark{
+  background: #0BC984 !important;
+}
+.nav-link{
+  color: #000 !important;
+}
 .mr-auto{
   position: absolute;
   right: 0;
+}
+.titulo{
+  color: #000 !important;
 }
 .header{
   background: #fdbd00;
