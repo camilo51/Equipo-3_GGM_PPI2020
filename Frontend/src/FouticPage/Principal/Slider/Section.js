@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Primera from '../../img/ProductosPrimeraPagina/PrimerDescuento.png';
-import slider1 from '../../img/ProductosPrimeraPagina/slider1.png';
+import Segunda from '../../img/ProductosPrimeraPagina/SegundoDescuento.png';
+import Tercera from '../../img/ProductosPrimeraPagina/TercerDescuento.png';
 import {Carousel} from 'react-bootstrap';
 
 class Section extends Component {
@@ -17,14 +18,14 @@ class Section extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={Primera}
+      src={Segunda}
       alt="Third slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={Primera}
+      src={Tercera}
       alt="Third slide"
     />
   </Carousel.Item>

@@ -1,9 +1,9 @@
-import Producto1 from './imagen1.png'
-import Producto2 from './imagen2.png'
-import Producto3 from './imagen3.png'
-import Producto4 from './imagen4.png'
-import Producto5 from './imagen5.png'
-import Producto6 from './imagen6.png'
+import Producto1 from './imagen1.jpeg'
+import Producto2 from './imagen2.jpeg'
+import Producto3 from './imagen3.jpeg'
+import Producto4 from './imagen4.jpeg'
+import Producto5 from './imagen5.jpeg'
+import Producto6 from './imagen6.jpeg'
 
 
 export const Hombres = [

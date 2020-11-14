@@ -3,7 +3,7 @@ const app = express();
 const routes = require('./routes/routes');
 
 // Puerto
-app.set('port', 3000);
+app.set('port', 3001);
 
 // Middleware
 app.use(express.json());
