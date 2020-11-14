@@ -9,29 +9,29 @@ import Producto6 from './imagen6.jpg'
 export const Hombres = [
   {
     producto: Producto1 ,
-    precio: '$18000',
-    informacion: 'Esta prenda esta hecha con las mejores telas, por ejemplo: tela meto, tela inco, tela soplo.'
+    precio: '$29000',
+    informacion: 'Click aqui para proceder a la compra'
   },
   {
     producto: Producto2 ,
-    precio: '$18000',
-    informacion: 'Esta prenda esta hecha con las mejores telas, por ejemplo: tela meto, tela inco, tela soplo.'
+    precio: '$28000',
+    informacion: 'Click aqui para proceder a la compra'
   },{
     producto: Producto3 ,
-    precio: '$18000',
-    informacion: 'Esta prenda esta hecha con las mejores telas, por ejemplo: tela meto, tela inco, tela soplo.'
+    precio: '$30000',
+    informacion: 'Click aqui para proceder a la compra'
   },{
     producto: Producto4 ,
     precio: '$18000',
-    informacion: 'Esta prenda esta hecha con las mejores telas, por ejemplo: tela meto, tela inco, tela soplo.'
+    informacion: 'Click aqui para proceder a la compra'
   },{
     producto: Producto5 ,
-    precio: '$18000',
-    informacion: 'Esta prenda esta hecha con las mejores telas, por ejemplo: tela meto, tela inco, tela soplo.'
+    precio: '$19000',
+    informacion: 'Click aqui para proceder a la compra'
   },{
     producto: Producto6 ,
-    precio: '$18000',
-    informacion: 'Esta prenda esta hecha con las mejores telas, por ejemplo: tela meto, tela inco, tela soplo.'
+    precio: '$32000',
+    informacion: 'Click aqui para proceder a la compra'
   },
 ];
  export default Hombres;
