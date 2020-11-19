@@ -34,7 +34,14 @@
   width: 95%;
   height: 100%;
 }
-
+.botones-Modal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.botones-Modal div{
+  margin: auto 2.5px;
+}
 .checks{
   display: flex;
   flex-direction: row;

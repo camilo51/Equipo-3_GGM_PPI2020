@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 .padre{
-  background: url("../../img/ProductosPrimeraPagina/fondo.jpeg");
-  height: 100%;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,13 +57,13 @@
   background: #2dff83;
   opacity: 1;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   /* .padre{
     display: none;
   } */
   .contenidoFormulario{
     width: 100%;
-    margin: 0;
+    margin:10pX 0;
     border-radius: 0;
     border: 0;
   }

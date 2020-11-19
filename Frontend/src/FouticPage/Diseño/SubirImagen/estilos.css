@@ -28,8 +28,9 @@
   text-align: center;
 }
 .formulario{
-  padding: 50px 20px;
+  width: 70%;
   border: none;
+  text-align: center;
 }
 .formulario input{
   text-align: center;

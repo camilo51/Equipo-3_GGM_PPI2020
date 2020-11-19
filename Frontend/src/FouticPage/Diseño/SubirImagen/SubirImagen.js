@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import './estilos.css';
 import imagen from '../../img/logo.jpeg';
+import InputFile from 'ds-react-input-file';
 
 class SubirImagen extends Component {
   render() {
@@ -12,9 +13,24 @@ class SubirImagen extends Component {
             <h4>¿Desea encargar esta prenda?</h4>
           </div>
           <div className="formulario">
-            <form enctype="multipart/form-data">
-              <input type="file" accept="image/png, image/jpeg" />
-            </form>
+          <InputFile onComplete={result => console.log(result)}>
+            <button
+              style={{
+                color: '#000',
+                backgroundColor: '#FFF',
+                border: '2px solid #000',
+                borderRadius: 5,
+                padding: 10,
+                textTransform: 'uppercase',
+                cursor: 'inherit',
+                display: 'inline-block',
+                fontFamily: 'sans-serif',
+                textAlign: 'center',
+              }}
+            >
+              Subir imagen
+            </button>
+          </InputFile>
             <div className="cargaImagen">
               <img src={imagen} className="size" />
             </div>

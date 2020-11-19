@@ -3,38 +3,19 @@ import { SketchPicker } from 'react-color';
 import imagen2 from '../../img/ProductosPrimeraPagina/elementos2.png';
 import './estilos.css';
 import { Button, Modal } from 'react-bootstrap';
+import { Modal1, Modal2, Modal3 } from '../../Modal/Modal';
 
 class Personalizar extends Component {
   state = {
     background: '#fff',
-    show: false
   };
   handleChangeComplete = (color) => {
     this.setState({ background: color.hex });
   };
-  handleShow = () => {
-    this.setState({show: true });
-  };
-  handleClose = () => {
-    this.setState({show: false });
-  };
   render() {
     return(
       <div className="principal">
-      <Modal show={this.state.show} onHide={this.handleClose} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={this.handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={this.handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
+
         <div className="contenedor">
           <div>
             <h4>¡Crea tu propio diseño!</h4>
@@ -50,10 +31,10 @@ class Personalizar extends Component {
             </div>
           </div>
           <div>
-              <div>
-                <Button as="input" type="button" value="Texturas" onClick={this.handleShow} />{' '}
-                <Button as="input" type="button" value="Texto" onClick={this.handleShow} />{' '}
-                <Button as="input" type="button" value="Elementos Didacticos" onClick={this.handleShow} />{' '}
+              <div className="botones-Modal">
+                <Modal1 />
+                <Modal2 />
+                <Modal3 />
               </div>
               <div className="tallas">
               <h4>Tallas</h4>

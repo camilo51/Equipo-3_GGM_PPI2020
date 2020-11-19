@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Iniciar from '../Iniciar/IniciarSeccion';
+import Iniciar from '../Iniciar/IniciarSesion';
 import './estilos.css';
 import logo from '../../img/logo.jpeg';
 import Google from '../Recursos/Google';
 import Facebook from '../Recursos/Facebook';
-import Ciudades from './Ciudades';
 
 class Registrarse extends Component {
   render() {
@@ -48,35 +47,11 @@ class Registrarse extends Component {
           <div className="elboton">
             <input type="submit" value="Enviar" className="buttonEnviar" />
           </div>
-          {/*<div>
-            <label className="infoLabel especialL">Departamento:</label>
-            <select size="1">
-              {Ciudades.map((item)=> {
-                return(
-                  <option key={item.id}>{item.departamento}</option>
-                );
-              })}
-            </select>
-            <select size="1" className="tamaño">
-              {Ciudades.map((item)=> {
-                return(
-                  <option key={item.id}>{item.ciudades}</option>
-                );
-              })}
-              </select>
-          </div>*/}
-
-
           <p className="letraO"> O </p>
           <div className="organizar">
             <Google />
             <Facebook />
           </div>
-
-
-            <div>
-            <p>Si ya tienes una cuenta <a href="#">Click aquí para Iniciar Seccion</a></p>
-            </div>
         </form>
       </div>
     );

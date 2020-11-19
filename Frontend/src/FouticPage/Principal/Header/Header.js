@@ -33,8 +33,7 @@ class Header extends Component {
               <NavDropdown.Divider />
               <Link to="/catalogos/niñas" className="enlaces"><NavDropdown.Item href="#Catalogos/niñas">Niñas</NavDropdown.Item></Link>
               </NavDropdown>
-              <Link to="/iniciarSesion"><Nav.Link href="#iniciarSesion">Iniciar Sesion</Nav.Link></Link>
-              <Link to="/registrarse"><Nav.Link href="#registrarse">Registrarse</Nav.Link></Link>
+              <Link to="/iniciarYregistro"><Nav.Link href="#iniciarSesion">Iniciar sesion O Registrase</Nav.Link></Link>
               <Link to="/perfil" className="enlaces activacion"><Nav.Link href="#perfil">Perfil</Nav.Link></Link>
               <Link to="/perfil"><img src={perfil} className="imagenDeUsuario" /></Link>
             </Nav>

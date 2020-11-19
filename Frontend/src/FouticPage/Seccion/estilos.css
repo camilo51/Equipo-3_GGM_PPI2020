@@ -1,0 +1,9 @@
+.ISFondo{
+  background-color: #a2e3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RFondo{
+  background-color: #b9a2ff;
+}

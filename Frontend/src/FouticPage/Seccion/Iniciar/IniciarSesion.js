@@ -13,7 +13,7 @@ class Inicio extends Component {
         <div>
         <img src={logo} className="logoImg"/>
         </div>
-        <h3 className="tituloIS">Iniciar Seccion</h3>
+        <h3 className="tituloIS">Iniciar Sesion</h3>
           <input type="email" placeholder="Usuario o Email" className="barrasDeInformacion" />
           <input type="password" placeholder="Contraseña" className="barrasDeInformacion" />
           <div className="elboton">
@@ -24,7 +24,6 @@ class Inicio extends Component {
           <Google />
           <Facebook />
           </div>
-          <p>Si no tienes una cuenta <Link to="/registrarse"> Click aquí para Registrarse</Link></p>
         </form>
       </div>
     );
