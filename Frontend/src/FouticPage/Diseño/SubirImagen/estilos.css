@@ -7,8 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: url("../../img/ProductosPrimeraPagina/fondo.jpeg");
+  background: url("../../img/ProductosPrimeraPagina/fondi.jpg");
   background-size: cover;
 }
 .formato{
@@ -22,7 +21,8 @@
   background: #fff;
   border-radius: 7px;
   padding: 10px 5px;
-  border: 1px solid #000
+  border: 1px solid #000;
+  margin: 10% auto;
 }
 .texto h4{
   text-align: center;

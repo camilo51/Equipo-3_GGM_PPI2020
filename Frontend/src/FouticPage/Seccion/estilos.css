@@ -1,9 +1,11 @@
+
 .ISFondo{
-  background-color: #a2e3ff;
+  background-color: #e7e7e7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .RFondo{
-  background-color: #b9a2ff;
+  background-color: rgb(219, 215, 215);
+  
 }
