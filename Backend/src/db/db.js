@@ -15,4 +15,4 @@ mysqlConnection.connect(function(err){
   }
 });
 
-module.export = mysqlConnection;
+module.exports = mysqlConnection;
