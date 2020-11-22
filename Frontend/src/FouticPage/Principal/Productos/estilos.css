@@ -33,6 +33,11 @@ display: none;
 }
 .precio{
   font-weight: bold;
+  background-color: #22d114;
+  width: 40%;
+  margin: 5px auto;
+  border-radius: 15px;
+  font-size: 2rem;
 }
 .contenedorDeProductos:hover{
   cursor: pointer;

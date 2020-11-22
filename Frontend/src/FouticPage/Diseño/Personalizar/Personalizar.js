@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { SketchPicker } from 'react-color';
-import imagen2 from '../../img/ProductosPrimeraPagina/elementos2.png';
+import imagen2 from '../../img/ncamisa.jpeg';
 import './estilos.css';
 import { Button, Modal } from 'react-bootstrap';
 import { Modal1, Modal2, Modal3 } from '../../Modal/Modal';
@@ -18,7 +18,7 @@ class Personalizar extends Component {
 
         <div className="contenedor">
           <div>
-            <h4>¡Crea tu propio diseño!</h4>
+            <h4 className="crea">¡Crea tu propio diseño!</h4>
           </div>
           <div className="editor">
             <div className="colores" >

@@ -26,6 +26,9 @@
 }
 .texto h4{
   text-align: center;
+  font-weight: bold;
+  font-size: 1.9rem;
+  color: #981a3e;
 }
 .formulario{
   width: 70%;

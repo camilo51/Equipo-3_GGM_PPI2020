@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import elemento1 from '../ProductosDeNiños/imagen2.jpeg';
-import elemento2 from '../ProductosDeNiñas/imagen3.jpeg';
+import elemento2 from '../ProductosPrimeraPagina/elemento2.jpeg';
 import elemento3 from '../ProductosDeMujeres/imagen5.jpg';
-import elemento4 from '../ProductosDeHombres/imagen6.png';
+import elemento4 from '../ProductosPrimeraPagina/elemento4.jpeg';
 import elemento5 from '../ProductosDeMujeres/imagen2.jpg';
 import elemento6 from '../ProductosDeHombres/imagen2.jpg';
 

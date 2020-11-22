@@ -6,34 +6,67 @@ import Google from '../Recursos/Google';
 import Facebook from '../Recursos/Facebook';
 
 class Registrarse extends Component {
+  state = {
+        nombre: "",
+        apellido: "",
+        nombreDeUsuario: "",
+        email: "",
+        contraseña: "",
+        fechaNacimiento: "",
+        direccion: "",
+        telefono: "",
+        genero: ""
+}
+handleChange = (e) =>{
+  this.setState({
+    ...this.state,
+    [e.target.name]:e.target.value
+  })
+}
+
+fetchData = () => {
+  console.log('Entre a la Funcion con '+JSON.stringify(this.state));
+  fetch('https://62rgz.sse.codesandbox.io/api/nuevo-usuario', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(this.state),
+  })
+  .then(res => {
+     res.json().then(data => {
+       console.log(data);
+     });
+   })
+}
+
   render() {
+    console.log(this.state);
     return (
       <div className="contenedorPadre">
-        <form className="contenedorDelFormulario">
+        <form className="contenedorDelFormulario" onSubmit={this.fetchData}>
           <div className="contenedorDeLaImagen">
             <img src={logo} className="logoImg" />
           </div>
           <h3 className="tituloIS">Registrarse</h3>
           <div>
             <label className="infoLabel">Nombre</label>
-            <input type="text" placeholder="Nombre de ususario" className="infoInput" />
+            <input type="text" name="nombre" defaultValue="" placeholder="Nombre" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Apellidos</label>
-            <input type="text" placeholder="Apellidos" className="infoInput" />
+            <input type="text" name="apellido" defaultValue="" placeholder="Apellidos" className="infoInput" onChange={this.handleChange} />
+            <label className="infoLabel">Nombre de Usuario</label>
+            <input type="text" name="nombreDeUsuario" defaultValue="" placeholder="Usuario" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Email</label>
-            <input type="email" placeholder="Email" className="infoInput" />
+            <input type="email" name="email" defaultValue="" placeholder="Email" className="infoInput" />
             <label className="infoLabel">Contraseña</label>
-            <input type="password" placeholder="Contraseña" className="infoInput" />
-            <label className="infoLabel">Repetir Contraseña</label>
-            <input type="password" placeholder="Contraseña" className="infoInput" />
+            <input type="password" name="contraseña" defaultValue="" placeholder="Contraseña" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Telefono movil</label>
-            <input type="tel" placeholder="Telefono" className="infoInput" />
+            <input type="tel" name="telefono" defaultValue="" placeholder="Telefono" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Direccion</label>
-            <input type="text" placeholder="Cl.__ # __ - __ " className="infoInput" />
+            <input type="text" name="direccion" defaultValue="" placeholder="Cl.__ # __ - __ " className="infoInput" onChange={this.handleChange} />
           </div>
           <div className="contMayor">
             <div className="cont">
               <label className="labelMalo">Genero </label>
-              <select size="1" className="tamaño">
+              <select size="1" name="genero" defaultValue="" onChange={this.handleChange} className="tamaño">
                 <option>Hombre</option>
                 <option>Mujer</option>
                 <option>Otro</option>
@@ -41,11 +74,11 @@ class Registrarse extends Component {
             </div>
             <div className="cont">
               <label className="labelMalo">Fecha de nacimiento</label>
-              <input type="date" className="tamaño" />
+              <input type="date" name ="fechaNacimiento" defaultValue="" className="tamaño" onChange={this.handleChange} />
             </div>
           </div>
           <div className="elboton">
-            <input type="submit" value="Enviar" className="buttonEnviar" />
+            <button type="button" onClick={this.fetchData} className="buttonEnviar">Enviar</button>
           </div>
           <p className="letraO"> O </p>
           <div className="organizar">

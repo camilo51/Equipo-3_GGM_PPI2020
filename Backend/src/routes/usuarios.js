@@ -31,6 +31,20 @@ mysqlConnection.query(nuevoAlumno, alumno, (err, results, fields) => {
   res.json({ message:`Alumno matriculado`, })
   });
 });
+router.post('/iniciarsesion',(req,res)=>{
+
+const {email,contraseña} = req.body;
+let alumno = [email,contraseña];
+
+let nuevoAlumno = `INSERT INTO usuarios(email,contraseña)
+                  VALUES(?,?)`;
+mysqlConnection.query(nuevoAlumno, alumno, (err, results, fields) => {
+  if (err) {
+    return console.error(err.message);
+  }
+  res.json({ message:`Alumno matriculado`, })
+  });
+});
 
 router.put('/usuario/:idUsuario', (req, res) => {
   const {nombre,apellido,nombreDeUsuario,email,contraseña,fechaNacimiento,direccion,telefono,genero} = req.body;

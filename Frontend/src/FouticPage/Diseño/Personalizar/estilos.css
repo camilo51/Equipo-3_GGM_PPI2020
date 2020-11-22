@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../img/ProductosPrimeraPagina/fondo.jpeg");
+  background: url("../../img/ProductosPrimeraPagina/fondi.jpg");
   background-size: cover;
 }
 .contenedor{
@@ -17,6 +17,15 @@
   background: #fff;
   border:1px solid #000;
   border-radius: 7px;
+}
+.btn-primary{
+  background: #464fba !important;
+  border: 1px solid #464fba;
+}
+.crea{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #981a3e;
 }
 .editor{
   display: flex;

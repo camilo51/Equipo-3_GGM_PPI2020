@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import './estilos.css';
-import imagen from '../../img/logo.jpeg';
+import imagen from '../../img/subir.jpeg';
 import InputFile from 'ds-react-input-file';
 
 class SubirImagen extends Component {
