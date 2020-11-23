@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Mujeres from '../../../img/ProductosDeMujeres/Mujeres.png';
+import Primera from '../../../img/ProductosDeMujeres/1.png';
+import Segunda from '../../../img/ProductosDeMujeres/2.png';
+import Tercera from '../../../img/ProductosDeMujeres/3.png';
 import {Carousel} from 'react-bootstrap';
 
 class Slider extends Component {
@@ -10,14 +12,14 @@ class Slider extends Component {
 <Carousel.Item>
   <img
     className="d-block w-100"
-    src={Mujeres}
+    src={Primera}
     alt="First slide"
   />
 </Carousel.Item>
 <Carousel.Item>
   <img
     className="d-block w-100"
-    src={Mujeres}
+    src={Segunda}
     alt="Third slide"
   />
 
@@ -25,7 +27,7 @@ class Slider extends Component {
 <Carousel.Item>
   <img
     className="d-block w-100"
-    src={Mujeres}
+    src={Tercera}
     alt="Third slide"
   />
 

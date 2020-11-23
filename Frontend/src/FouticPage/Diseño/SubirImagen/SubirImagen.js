@@ -5,6 +5,7 @@ import imagen from '../../img/subir.jpeg';
 import InputFile from 'ds-react-input-file';
 
 class SubirImagen extends Component {
+
   render() {
     return (
       <div className="todo">
@@ -13,7 +14,7 @@ class SubirImagen extends Component {
             <h4>¿Desea encargar esta prenda?</h4>
           </div>
           <div className="formulario">
-          <InputFile onComplete={result => console.log(result)}>
+          <InputFile onComplete={result => console.log(result)} >
             <button
               style={{
                 color: '#000',

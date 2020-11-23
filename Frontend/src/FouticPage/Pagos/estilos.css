@@ -1,6 +1,6 @@
 .estoEsTodo{
   display: flex;
-  background: url(../img/ProductosPrimeraPagina/fondo.jpeg);
+  background: url(../img/ProductosPrimeraPagina/fondi.jpg);
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@
   border: 1px solid #000;
   border-radius: 7px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;

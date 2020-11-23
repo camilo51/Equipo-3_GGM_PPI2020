@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Perfil from '../img/Usuario/Perfil.png';
 import pedidos from '../img/Usuario/Usuario'
 import './estilos.css'
+import { Link } from "react-router-dom";
 
 class Usuario extends Component {
 
@@ -15,15 +16,17 @@ class Usuario extends Component {
             <h5>August10023</h5>
           </div>
           <div className="pedidos">
-          <h4>ULTIMOS PEDIDOS</h4>
+          <h4>ULTIMOS PEDIDOS:</h4>
             <div className="centrar">
             <h2>Productos</h2>
               {pedidos.map((item) => {
                 return(
                   <div className="contenedorDeProductos">
+                    <Link to="/prendas" className="productos">
                     <img src={item.producto} className="productosPrimera" />
                     <h3 className="precio">{item.precio}</h3>
                     <p className="parrafo">{item.informacion}</p>
+                    </Link>
                   </div>
                 );
               })}

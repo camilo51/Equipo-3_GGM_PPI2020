@@ -5,7 +5,9 @@
   flex-wrap: wrap;
 }
 .principalPerfil h2{
-  font-size:35px;
+  margin-top: 20px;
+  color: #970007;
+  font-size:40px;
   font-weight: bold;
 }
 .imagenDePerfil{
@@ -24,4 +26,7 @@
 }
 .pedidos h4{
   margin-bottom: 0;
+  color: #970007 ;
+  font-weight: bold;
+  font-size: 28px;
 }

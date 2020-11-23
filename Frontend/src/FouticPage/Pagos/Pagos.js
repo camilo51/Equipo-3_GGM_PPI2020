@@ -38,9 +38,8 @@ class Pagos extends Component {
               </Accordion.Collapse>
             </Card>
           </Accordion>
-            <div className="botonesDeCompras">
-            </div>
           </div>
+          
           <div className="formularioParaFecha">
             <form>
               <p>Aqui debera de poner el dia en el que desee que la prenda le sea entregada
