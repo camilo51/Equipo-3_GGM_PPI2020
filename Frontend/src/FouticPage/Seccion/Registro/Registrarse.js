@@ -1,43 +1,45 @@
 import React, { Component } from 'react';
-import Iniciar from '../Iniciar/IniciarSesion';
 import './estilos.css';
 import logo from '../../img/logo.jpeg';
 import Google from '../Recursos/Google';
 import Facebook from '../Recursos/Facebook';
 
 class Registrarse extends Component {
+ 
   state = {
-        nombre: "",
-        apellido: "",
-        nombreDeUsuario: "",
-        email: "",
-        contraseña: "",
-        fechaNacimiento: "",
-        direccion: "",
-        telefono: "",
-        genero: ""
-}
-handleChange = (e) =>{
-  this.setState({
-    ...this.state,
-    [e.target.name]:e.target.value
-  })
-}
+    nombre: "",
+    apellido: "",
+    nombreDeUsuario: "",
+    email: "",
+    contraseña: "",
+    fechaNacimiento: "",
+    direccion: "",
+    telefono: "",
+    genero: ""
+  }
+  handleChange = (e) => {
+    this.setState({
+      ...this.state,
+      [e.target.name]: e.target.value
+    })
+  }
 
-fetchData = () => {
-  console.log('Entre a la Funcion con '+JSON.stringify(this.state));
-  fetch('https://62rgz.sse.codesandbox.io/api/nuevo-usuario', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(this.state),
-  })
-  .then(res => {
-     res.json().then(data => {
-       console.log(data);
-     });
-   })
+  fetchData = () => {
+    console.log('Entre a la Funcion con ' + JSON.stringify(this.state));
+    fetch('https://62rgz.sse.codesandbox.io/api/nuevo-usuario', {
+      method: 'POST',
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      },
+      body: JSON.stringify(this.state),
+    })
+      .then(res => {res.json()
+        .then(data => {
+          console.log(data);
+        });
+      })
+      .catch(err => { console.log(err) })
 }
-
   render() {
     console.log(this.state);
     return (
@@ -55,7 +57,7 @@ fetchData = () => {
             <label className="infoLabel">Nombre de Usuario</label>
             <input type="text" name="nombreDeUsuario" defaultValue="" placeholder="Usuario" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Email</label>
-            <input type="email" name="email" defaultValue="" placeholder="Email" className="infoInput" />
+            <input type="email" name="email" defaultValue="" placeholder="Email" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Contraseña</label>
             <input type="password" name="contraseña" defaultValue="" placeholder="Contraseña" className="infoInput" onChange={this.handleChange} />
             <label className="infoLabel">Telefono movil</label>
@@ -74,7 +76,7 @@ fetchData = () => {
             </div>
             <div className="cont">
               <label className="labelMalo">Fecha de nacimiento</label>
-              <input type="date" name ="fechaNacimiento" defaultValue="" className="tamaño" onChange={this.handleChange} />
+              <input type="date" name="fechaNacimiento" defaultValue="" className="tamaño" onChange={this.handleChange} />
             </div>
           </div>
           <div className="elboton">
